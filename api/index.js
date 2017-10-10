@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var path = require('path');
 var fs = require('fs');
-var rbEventEmitter = require('../utils/RbEventEmitter');
+// var rbEventEmitter = require('../utils/RbEventEmitter');
 var { initOrSend } = require('../py/wx');
 
 /* batchSend */

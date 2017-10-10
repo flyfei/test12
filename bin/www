@@ -32,7 +32,7 @@ server.on('listening', onListening);
 /**
  * init socket io
  */
-require('../utils/RbSocketIo').init(server);
+// require('../utils/RbSocketIo').init(server);
 require('../py/wx').initOrSend();
 
 /**
