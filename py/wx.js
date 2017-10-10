@@ -3,7 +3,7 @@ const execFile = require('child_process').execFile;
 
 module.exports = {
 	initOrSend: funtion (data) {
-		const pyFile = 'D:\\workspaces\\nodejs\\wxrobotmanager\\py\\wxManager.py';
+		const pyFile = '/app/test12/py/wxManager.py';
 		var params = [pyFile];
 		if (data) {
 			params.push(data);
