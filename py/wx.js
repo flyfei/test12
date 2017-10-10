@@ -1,14 +1,14 @@
 
-const { execFile } = require('child_process');
+const execFile = require('child_process').execFile;
 
 module.exports = {
-	initOrSend: (data) => {
-		const pyFile = '/app/test12/py/wxManager.py';
+	initOrSend: funtion (data) {
+		const pyFile = 'D:\\workspaces\\nodejs\\wxrobotmanager\\py\\wxManager.py';
 		var params = [pyFile];
 		if (data) {
 			params.push(data);
 		}
-		const child = execFile('python', params, (error, stdout, stderr) => {
+		const child = execFile('python', params, funtion (error, stdout, stderr) {
 			if (error) {
 				throw error;
 			}
