@@ -22,5 +22,5 @@ def lc():
 def ec():
         print('exit')
 # itchat.auto_login()
-itchat.auto_login(hotReload=True,loginCallback=lc, exitCallback=ec)
+itchat.auto_login(enableCmdQR=True,hotReload=True,loginCallback=lc, exitCallback=ec)
 itchat.run()
