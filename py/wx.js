@@ -1,5 +1,6 @@
 
 const execFile = require('child_process').execFile;
+
 function initOrSend(data) {
 	const pyFile = '/app/test12/py/wxManager.py';
 	var params = [pyFile];
