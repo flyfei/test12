@@ -13,7 +13,7 @@ router.post('/batchsend', function(req, res, next) {
     if (req.busboy) {
     	console.log('=========1');
     	var data = {};
-    	req.busboy.on('file', (fieldname, file, fileName, encoding, mimeType) => {
+    	req.busboy.on('file', function (fieldname, file, fileName, encoding, mimeType) {
     		if(mimeType.substr(0,5) == "image"){
 	          	var stream = fs.createWriteStream(path.join(__dirname, '../', 'static/upload', new Date().getTime() + path.extname(fileName)));
 	          	file.pipe(stream);
