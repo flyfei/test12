@@ -14,5 +14,5 @@ function initOrSend(data) {
 	});
 }
 module.exports = {
-	initOrSend
-};
+	initOrSend,
+}
