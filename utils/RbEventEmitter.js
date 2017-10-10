@@ -1,4 +1,4 @@
-var EventEmitter = require('events').EventEmitter;
-var emitter = new EventEmitter();
+// var EventEmitter = require('events').EventEmitter;
+// var emitter = new EventEmitter();
 
-module.exports = emitter;
+// module.exports = emitter;
